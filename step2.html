@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive_HTML_Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top-banner">
+    <h1>Get an Estimate for Workspace</h1>
+  </header>
+
+  <main class="container">
+
+    <form class="form-card" id="req-form">
+      <h3>Your Requirements</h3>
+      
+      <div class="form-group">
+        <label for="space-type">Space Type</label>
+        <select id="space-type" required>
+          <option value="" disabled selected>Event Space</option>
+          <option value="private">Private Office</option>
+          <option value="coworking">Coworking Desk</option>
+          <option value="meeting">Meeting Room</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="people">Number of People</label>
+        <input type="number" id="people" placeholder="01" min="1" required>
+      </div>
+      <div class="date-row">
+        <div class="form-group">
+          <label for="check-in">Check In</label>
+          <input type="date" id="check-in" required>
+        </div>
+        <div class="form-group">
+          <label for="check-out">Check Out</label>
+          <input type="date" id="check-out" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        <select id="location" required>
+          <option value="" disabled selected>City/Area</option>
+          <option value="ny">New York</option>
+          <option value="ldn">London</option>
+          <option value="kyiv">Kyiv</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="preferences">Any specific preferences</label>
+        <select id="preferences">
+          <option value="no" selected>No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </div>
+      <div class="form-group" id="preferences-details-group" style="display: none;">
+        <label for="preferences-details">Please mention here</label>
+        <textarea id="preferences-details" rows="3" placeholder="Please mention here"></textarea>
+      </div>
+
+      <div class="btn-group-dual">
+        <a href="index.html" class="btn btn-outline">Back</a>
+        <button type="submit" class="btn btn-gradient">Submit</button>
+      </div>
+    </form>
+
+  </main>
+
+ <script src="js/main.js"></script>
+
+</body>
+</html>
